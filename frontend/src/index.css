@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+/* ── Variables ─────────────────────────────────────── */
+:root {
+  --accent:        #00C896;
+  --accent-dim:    #003D2E;
+  --accent-light:  #E8F9F4;
+  --accent-glow:   rgba(0, 200, 150, 0.15);
+
+  --bg:            #0D1117;
+  --bg-card:       #161B22;
+  --bg-input:      #1C2128;
+  --bg-hover:      #1F2937;
+
+  --border:        #30363D;
+  --border-accent: rgba(0, 200, 150, 0.3);
+
+  --text:          #E6EDF3;
+  --text-muted:    #7D8590;
+  --text-dim:      #484F58;
+
+  --pain-ux:       rgba(245, 158, 11, 0.12);
+  --pain-ux-text:  #F59E0B;
+  --pain-auto:     rgba(139, 92, 246, 0.12);
+  --pain-auto-text:#A78BFA;
+  --pain-cta:      rgba(239, 68, 68, 0.12);
+  --pain-cta-text: #F87171;
+  --pain-content:  rgba(59, 130, 246, 0.12);
+  --pain-content-text: #60A5FA;
+  --pain-perf:     rgba(16, 185, 129, 0.12);
+  --pain-perf-text:#34D399;
+
+  --severity-high:   #F87171;
+  --severity-medium: #FBBF24;
+  --severity-low:    #34D399;
+
+  --radius:   10px;
+  --radius-sm: 6px;
+  --shadow:   0 4px 24px rgba(0,0,0,0.4);
+}
+
+/* ── Reset ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ────────────────────────────────────── */
+h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
+code, pre, .mono { font-family: 'DM Mono', monospace; }
+
+/* ── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ── Utility ───────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 24px 0;
+}
